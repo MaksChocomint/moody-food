@@ -1,0 +1,682 @@
+@import url("https://fonts.googleapis.com/css2?family=Atma&family=Chivo:wght@300;400;700&family=Nunito:wght@300&family=Overpass:wght@100;200;300;400&display=swap");
+
+body {
+  margin: 0;
+  color: #fff;
+  line-height: 1.6;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.header {
+  margin-top: 76px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.header__inner {
+  background: rgba(255, 255, 255, 0.3);
+  padding: 10px 40px;
+  line-height: 1.2;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__link {
+  font-family: "Chivo", sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  text-transform: uppercase;
+
+  margin: 0 40px;
+
+  color: #fff;
+  text-decoration: none;
+
+  transition: 0.3s;
+}
+
+.nav__link:last-child {
+  margin-right: 25px;
+}
+
+.nav__link:first-child {
+  margin-left: 25px;
+}
+
+.nav__link:hover {
+  color: #ffc901;
+}
+
+.nav__link:active {
+  color: #fff;
+}
+
+.nav__logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav__logo:hover {
+  cursor: default;
+}
+
+.nav__logotitle {
+  font-family: "Atma", cursive;
+  font-weight: 400;
+  font-size: 53px;
+}
+
+.nav__logotext {
+  font-family: "Nunito", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.intro {
+  width: 100%;
+  height: 190vh;
+  background: url("../images/intro.png");
+  background-size: cover;
+}
+
+.intro__inner {
+  height: 190vh;
+
+  display: flex;
+  flex-direction: column;
+
+  padding-top: 400px;
+  margin-right: 110px;
+
+  row-gap: 70px;
+}
+
+.intro__learn {
+  text-transform: uppercase;
+  font-family: "Chivo", sans-serif;
+  font-weight: 400;
+  font-size: 47.9px;
+  text-align: right;
+
+  position: relative;
+}
+
+.intro__learnmore {
+  color: #ffc901;
+  text-decoration: none;
+  font-size: 37.5px;
+}
+
+/* animation keyframes*/
+
+.intro__logo {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+
+  line-height: 1.2;
+}
+
+.intro__logotitle {
+  font-family: "Atma", cursive;
+  font-weight: 400;
+  font-size: 107px;
+  margin-right: 40px;
+}
+
+.intro__logotext {
+  font-family: "Nunito", sans-serif;
+  font-weight: 300;
+  font-size: 31px;
+}
+
+.intro__book {
+  text-transform: uppercase;
+  text-align: right;
+  font-size: 52.6px;
+  font-weight: 400;
+  font-family: "Chivo", sans-serif;
+
+  position: relative;
+  margin-top: 150px;
+}
+
+.now {
+  text-transform: uppercase;
+  color: #ffc901;
+  text-decoration: none;
+  position: relative;
+  z-index: 2;
+}
+
+.white__line {
+  background: rgba(255, 255, 255, 0.3);
+  width: 970px;
+  height: 240px;
+  position: absolute;
+  z-index: 1;
+  right: -110px;
+  top: -35px;
+}
+
+.pic__01 {
+  position: absolute;
+  top: -200px;
+  right: 1050px;
+}
+
+.pic__02 {
+  position: absolute;
+  top: -130px;
+  right: 950px;
+}
+
+.pic__03 {
+  position: absolute;
+  top: -230px;
+  right: 550px;
+}
+
+.pic__04 {
+  position: absolute;
+  top: -550px;
+  right: 500px;
+  z-index: 3;
+}
+
+.about {
+  width: 100%;
+  height: 119vh;
+  background: url("../images/about.png");
+  background-size: cover;
+}
+
+.about__inner {
+  width: 675px;
+  padding: 120px 0 0 85px;
+
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  row-gap: 95px;
+}
+
+.about__title {
+  font-family: "Atma", cursive;
+  font-weight: 400;
+  font-size: 54.8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about__titlefw {
+  font-family: "Chivo", sans-serif;
+}
+
+.about__text {
+  font-family: "Overpass", sans-serif;
+  font-weight: 300;
+  font-size: 21px;
+}
+
+.about__book {
+  font-family: "Overpass", sans-serif;
+  font-weight: 300;
+  font-size: 33px;
+}
+
+.quality {
+  background: url("../images/quality.png");
+  background-size: cover;
+
+  width: 100%;
+  height: 160vh;
+}
+
+.honey {
+  margin-left: 150px;
+  width: 500px;
+  position: absolute;
+}
+
+.quality__inner {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  width: 1450px;
+
+  row-gap: 95px;
+  padding: 300px 0 0 700px;
+}
+
+.quality__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-style: "Chivo", sans-serif;
+  font-weight: 400;
+  font-size: 55px;
+  text-transform: uppercase;
+}
+
+.quality__text {
+  font-style: "Overpass", sans-serif;
+  font-weight: 300;
+  font-size: 25px;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+.double {
+  text-transform: uppercase;
+  font-size: 68px;
+  font-style: "Chivo", sans-serif;
+  font-weight: 400;
+}
+
+.saturday {
+  text-transform: uppercase;
+  font-size: 55px;
+  font-style: "Chivo", sans-serif;
+  font-weight: 400;
+}
+
+.discount {
+  font-family: "Overpass", sans-serif;
+  font-weight: 100;
+
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  color: #ffc901;
+  font-size: 36px;
+}
+
+.gallery {
+  background: url("../images/gallery.png");
+  background-size: cover;
+
+  width: 100%;
+  height: 170vh;
+}
+
+.gallery__title {
+  font-family: "Chivo", sans-serif;
+  font-weight: 400;
+  font-size: 55px;
+  text-transform: uppercase;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 85px;
+  margin: 0 440px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 20px;
+}
+
+.column1,
+.column2,
+.column3 {
+  flex: 25%;
+  max-width: 25%;
+}
+
+.column1 img,
+.column2 img,
+.column3 img {
+  padding: 7px;
+  vertical-align: middle;
+  margin-bottom: 5px;
+}
+
+.column1 img:first-child {
+  height: 365px;
+}
+
+.column1 img:last-child {
+  height: 497px;
+}
+
+.column2 img {
+  margin-bottom: 29px;
+  width: 400px;
+}
+
+.column3 img:first-child {
+  margin-bottom: 30px;
+  height: 240px;
+}
+
+.column3 img:last-child {
+  height: 595px;
+}
+
+.book__section {
+  background: url(../images/book.png);
+  background-size: cover;
+
+  width: 100%;
+  height: 152vh;
+}
+
+.book__title {
+  font-family: "Chivo", sans-serif;
+  font-weight: 400;
+  font-size: 55px;
+  text-transform: uppercase;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 70px;
+  margin: 0 440px;
+}
+
+.book__subtitle {
+  display: flex;
+  justify-content: center;
+
+  font-size: 37.5px;
+  font-weight: 200;
+  font-family: "Overpass", sans-serif;
+
+  margin-bottom: 90px;
+}
+
+.book__form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+label {
+  font-size: 29px;
+  font-family: "Overpass", sans-serif;
+  font-weight: 200;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  width: 415px;
+}
+
+.input:first-child {
+  margin-right: 300px;
+}
+
+.input__stack {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 182px 75px;
+}
+
+input,
+select {
+  padding: 15px 20px;
+
+  background: transparent;
+  border: #ffc901 solid 1px;
+  border-radius: 8px;
+  color: #fff;
+  outline: 0;
+
+  font-family: "Overpass", sans-serif;
+  font-size: 19px;
+  font-weight: 300;
+}
+
+select {
+  appearance: none;
+
+  background: url("../images/arrow.svg") no-repeat;
+  background-position-x: 95%;
+  background-position-y: 50%;
+}
+
+#input_4 {
+  background: url("../images/clock.svg") no-repeat;
+  background-position-x: 95%;
+  background-position-y: 50%;
+}
+
+input::placeholder {
+  color: #fff;
+  opacity: 0.8;
+}
+
+option {
+  background: #2d2d2d;
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+
+#input_5 {
+  background: url("../images/arrow.svg") no-repeat;
+  background-position-x: 95%;
+  background-position-y: 50%;
+}
+
+.book__btn {
+  background: #ffc901;
+  border: #ffc901 solid 1px;
+  border-radius: 8px;
+
+  font-size: 38px;
+  font-family: "Overpass", sans-serif;
+  font-weight: 400;
+  color: #010101;
+  text-transform: uppercase;
+
+  vertical-align: center;
+  line-height: 1;
+
+  padding: 20px 125px 10px;
+  margin-top: 25px;
+}
+
+.book__btn:hover {
+  opacity: 0.8;
+}
+
+.book__btn:active {
+  opacity: 1;
+}
+
+.dish__section {
+  background: url("../images/dish_bg.png") no-repeat;
+  background-size: cover;
+
+  width: 100%;
+  height: 148vh;
+}
+
+.review__section {
+  background: url("../images/review.png") no-repeat;
+  background-size: cover;
+
+  width: 100%;
+  height: 56vh;
+}
+
+.review__inner {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+
+  row-gap: 35px;
+  padding: 35px 0 50px;
+  margin: 0 200px;
+}
+
+#quotes {
+  font-family: "Chivo", sans-serif;
+  color: #ffc901;
+  font-weight: 700;
+  font-size: 121px;
+  height: 100px;
+}
+
+#review__text {
+  font-family: "Overpass", sans-serif;
+  font-weight: 300;
+  font-size: 27.3px;
+}
+
+#name {
+  font-family: "Chivo", sans-serif;
+  font-weight: 400;
+  font-size: 34px;
+  color: #ffc901;
+
+  text-transform: uppercase;
+}
+
+.footer {
+  background: url("../images/footer.png");
+  background-size: cover;
+  height: 200vh;
+  width: 100%;
+}
+
+.footer__inner_top {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 100px;
+  padding: 160px 0;
+}
+
+.footer__text_section {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 60px;
+}
+
+.footer__text_section_title {
+  font-family: "Chivo", sans-serif;
+  font-weight: 300;
+  font-size: 50px;
+  color: #ffc901;
+}
+
+.footer__text_section_text {
+  font-family: "Overpass", sans-serif;
+  font-weight: 200;
+  font-size: 29px;
+}
+
+.footer__text_section_contact {
+  font-family: "Overpass", sans-serif;
+  font-weight: 400;
+  font-size: 41px;
+  color: #ffc901;
+  text-transform: uppercase;
+
+  cursor: pointer;
+}
+
+.footer__inner_bottom {
+  display: flex;
+  flex-direction: column;
+  row-gap: 100px;
+  padding-top: 100px;
+  margin: 0 300px;
+}
+
+.footer__title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1;
+}
+
+.ftitle {
+  font-family: "Atma", cursive;
+  font-size: 83px;
+  font-weight: 400;
+}
+
+.fsubtitle {
+  font-family: "Nunito", sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.footer__links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__link {
+  text-decoration: none;
+  text-transform: uppercase;
+
+  font-family: "Overpass", sans-serif;
+  font-weight: 400;
+  font-size: 21px;
+
+  color: #fff;
+
+  transition: 0.3s;
+}
+
+.footer__link:hover {
+  color: #ffc901;
+}
+
+.footer__link:active {
+  color: #fff;
+}
+
+.footer__icons {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 325px;
+}
+
+.footer__icons svg,
+.footer__icons img {
+  cursor: pointer;
+}
+
+#inst {
+  width: 46px;
+  height: 46px;
+}
